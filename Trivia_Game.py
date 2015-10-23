@@ -8,14 +8,28 @@ def randomize_questions (questions):
     # Write code here
     print 'what?'
 
-def display_question (question, answer):
+def display_question (question, answer, correct):
     """Display question. Get user answer. Return True if correct."""
     # Write code here
-    return True # FIXME
-
-def display_results (answers):
+    # return True # FIXME
+    answer = raw_input(question)
+    if answer == (answer):
+       print('correct!')
+       # help from http://stackoverflow.com/questions/28491833/how-to-count-correct-answers-in-python
+       correct = correct + 1
+    else if :
+       print('incorrect')
+       incorrect = incorrect + 1
+       
+def display_results (answers, correct):
     """Display correct answers out of total answers"""
-    # Write code here
+    grade = (correct * 100)/ 10)
+    print ('Your scored',grade, 'percent')
+    if (grade > 70)
+       print('Better luck next time',name)
+
+    if (grade < 80)
+       print('Good Job', name,' You Are A Sports Genius')
 
 
 
