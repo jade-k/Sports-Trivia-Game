@@ -66,7 +66,7 @@ import random
 def display_title ():
     """display the title using the players name"""
     print raw_input('What is your name?')
-    print("Welcome to the Ultimate Sports Trivia Game',name'!')
+    print("Welcome to the Ultimate Sports Trivia Game',name'!")
 
 def display_directions ():
     """display the directions using response given by player"""
