@@ -58,3 +58,38 @@ def test_all():
     test_display_title()
 
 test_all()
+
+###Final Code###
+
+import random
+
+def display_title ():
+    """display the title using the players name"""
+    print raw_input('What is your name?')
+    print("Welcome to the Ultimate Sports Trivia Game',name'!')
+
+def display_directions ():
+    """display the directions using response given by player"""
+    print raw_input ('Are you ready to begin?')
+    if 'yes':
+    print('Okay! In the game the only way to get a correct answer is to put answer in all CAPITAL LETTERS. Also no using sentences in your answer, only give the answer as its normal noun/pronoun. Lastly, no using the or a. Type anything below to begin.')
+    else:
+    print('Ready to begin yet?')
+
+
+def randomize_questions ('Who has the most total touchdowns on the New England Patriots as of 2015?','Which country won the 2015 Womens FIFA World Cup?','What is the name of the penalty in hockey when a player hits another player with the hockey stick?','What is Bostons NBA basketball team?','In basketball what is a basket from the court halfline worth?','Which MLB baseball team won the World Series in 2013?','What is three strikes in a row in bowling called?','In track and field what is the event where someone jumps over obstacles while racing?', 'What is the name of Americas largest skaateboarding conversation?', 'What does NASCAR stand for?') 
+item = random_choice
+    """Takes the questions,  puts them into  a random order"""
+
+def main_loop (questions):
+    """Using questions, randomize questions, ask players questions, display results"""
+    display_title = (raw_input, title)
+    display_directions = raw_input
+    randomize_questions = questions
+    display_question = (questions, answers)
+    display_results = answers
+    play_game = (display_title, randomize_questions, display_questions, display_results)
+
+answers = (correct, incorrect)
+name = raw_input
+item = random_choice
