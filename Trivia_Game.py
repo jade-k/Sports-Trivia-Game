@@ -17,7 +17,7 @@ def display_question (question, answer, correct):
        print('correct!')
        # help from http://stackoverflow.com/questions/28491833/how-to-count-correct-answers-in-python
        correct = correct + 1
-    else if :
+    else:
        print('incorrect')
        incorrect = incorrect + 1
        
