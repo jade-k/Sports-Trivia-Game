@@ -76,10 +76,33 @@ def display_directions ():
     else:
     print('Ready to begin yet?')
 
+def display_question (question, answer, correct):
+    """Display question. Get user answer. Return True if correct."""
+    # Write code here
+    # return True # FIXME
+    answer = raw_input(question)
+    if answer == (answer):
+       print('correct!')
+       # help from http://stackoverflow.com/questions/28491833/how-to-count-correct-answers-in-python
+       correct = correct + 1
+    else:
+       print('incorrect')
+       incorrect = incorrect + 1
 
 def randomize_questions ('Who has the most total touchdowns on the New England Patriots as of 2015?','Which country won the 2015 Womens FIFA World Cup?','What is the name of the penalty in hockey when a player hits another player with the hockey stick?','What is Bostons NBA basketball team?','In basketball what is a basket from the court halfline worth?','Which MLB baseball team won the World Series in 2013?','What is three strikes in a row in bowling called?','In track and field what is the event where someone jumps over obstacles while racing?', 'What is the name of Americas largest skaateboarding conversation?', 'What does NASCAR stand for?') 
 item = random_choice
     """Takes the questions,  puts them into  a random order"""
+
+def display_results (answers, correct):
+    """Display correct answers out of total answers"""
+    grade = (correct * 100)/ 10)
+    print ('Your scored',grade, 'percent')
+    if (grade > 70)
+       print('Better luck next time',name)
+
+    if (grade < 80)
+       print('Good Job', name,' You Are A Sports Genius')
+
 
 def main_loop (questions):
     """Using questions, randomize questions, ask players questions, display results"""
@@ -93,6 +116,8 @@ def main_loop (questions):
 answers = (correct, incorrect)
 name = raw_input
 item = random_choice
+
+
 
 
 
