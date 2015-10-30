@@ -1,6 +1,6 @@
-def display_title ():
+def display_title (name):
     """print the title using the player's name"""
-    print raw_input('What is your name?')
+    name = raw_input('What is your name?')
     print('Welcome to the Ultimate Sports Trivia Game',name)
 
 def randomize_questions (questions):
@@ -23,13 +23,13 @@ def display_question (question, answer, correct):
        
 def display_results (answers, correct):
     """Display correct answers out of total answers"""
-    grade = (correct * 100)/ 10)
-    print ('Your scored',grade, 'percent')
-    if (grade > 70)
-       print('Better luck next time',name)
+   # grade = (correct * 100)/ 10)
+   # print ('Your scored',grade, 'percent')
+   # if (grade > 70)
+      # print('Better luck next time',name)
 
-    if (grade < 80)
-       print('Good Job', name,' You Are A Sports Genius')
+   # if (grade < 80)
+       # print('Good Job', name,' You Are A Sports Genius')
 
 
 
@@ -39,10 +39,10 @@ def test_display_question ():
     print 'Result is:',display_question("What is your favorite color?","Blue")
     print 'Result is:',display_question("What is 3+7?",10)
 
-def test_display_title ():
+def test_display_title (name):
     #print raw_input('What is your name?')
     #print('Welcome to the tivia game',name)
-    display_title()
+    display_title(name)
     
 def test_randomize_questions ():
     print('hi')
@@ -63,18 +63,14 @@ test_all()
 
 import random
 
-def display_title ():
-    """display the title using the players name"""
-    print raw_input('What is your name?')
-    print("Welcome to the Ultimate Sports Trivia Game',name'!")
-
 def display_directions ():
     """display the directions using response given by player"""
     print raw_input ('Are you ready to begin?')
     if 'yes':
-    print('Okay! In the game the only way to get a correct answer is to put answer in all CAPITAL LETTERS. Also no using sentences in your answer, only give the answer as its normal noun/pronoun. Lastly, no using the or a. Type anything below to begin.')
+        print('Okay! In the game the only way to get a correct answer is to put answer in all CAPITAL LETTERS. Also no using sentences in your answer, only give the answer as its normal noun/pronoun. Lastly, no using the or a. Type anything below to begin.')
     else:
-    print('Ready to begin yet?')
+
+        print('Ready to begin yet?')
 
 def display_question (question, answer, correct):
     """Display question. Get user answer. Return True if correct."""
@@ -106,7 +102,7 @@ def display_results (answers, correct):
 
 def main_loop (questions):
     """Using questions, randomize questions, ask players questions, display results"""
-    display_title = (raw_input, title)
+    display_title (name)
     display_directions = raw_input
     randomize_questions = questions
     display_question = (questions, answers)
