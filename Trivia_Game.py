@@ -43,7 +43,7 @@ def test_randomize_questions ():
     print('hi')
     print randomize_questions(['who are you?','what do you like?','why are you here?'])
 
-def test_display_results (): 
+def test_display_results (answers, correct): 
     display_results()
 
 def test_all():    
@@ -94,10 +94,10 @@ def display_results (answers, correct, incorrect): #Patrick
     """Display correct answers out of total answers"""
     grade = ("correct * 100)/ 10")
     print ('Your scored',grade, 'percent')
-    if (grade > 70)
+    if (grade > 70):
        print('Better luck next time',name)
 
-    if (grade < 80)
+    if (grade < 80):
        print('Good Job', name,' You Are A Sports Genius')
 
 
@@ -110,6 +110,4 @@ def main_loop (questions):
     display_results = answers
     play_game = (display_title, randomize_questions, display_questions, display_results)
 
-answers = (correct, incorrect)
-name = raw_input
-item = random_choice
+
