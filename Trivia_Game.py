@@ -70,8 +70,11 @@ def display_directions ():
         print('Okay! In the game the only way to get a correct answer is to put answer in all CAPITAL LETTERS. Also no using sentences in your answer, only give the answer as its normal noun/pronoun. Lastly, no using the or a. Type anything below to begin.')
     else:
 
+<<<<<<< HEAD
         print('Ready to begin yet?')
 
+=======
+>>>>>>> origin/master
 def display_question (question, answer, correct):
     """Display question. Get user answer. Return True if correct."""
     # Write code here
