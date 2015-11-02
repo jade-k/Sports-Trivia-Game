@@ -52,7 +52,7 @@ def test_all():
     test_display_results()
     test_display_title()
 
-    test_all():
+    test_all()
 
 ###Final Code###
 
