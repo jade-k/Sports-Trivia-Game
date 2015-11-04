@@ -1,3 +1,5 @@
+import random
+
 def display_title (name):
     """print the title using the player's name"""
     name = raw_input('What is your name?')
@@ -85,9 +87,10 @@ def display_question (question, answer, correct): #Patrick
        print('incorrect')
        incorrect = incorrect + 1
 
-def randomize_questions (): #Jade
+def random_shuffle (q_and_a): #Jade
     """Takes the questions,  puts them into  a random order"""
-    For questions = (('Who has the most total touchdowns on the New England Patriots as of 2015?'),('Which country won the 2015 Womens FIFA World Cup?'),('What is the name of the penalty in hockey when a player hits another player with the hockey stick?'),('What is Bostons NBA basketball team?'),('In basketball what is a basket from the court halfline worth?'),('Which MLB baseball team won the World Series in 2013?'),('What is three strikes in a row in bowling called?'),('In track and field what is the event where someone jumps over obstacles while racing?'),('What is the name of Americas largest skateboarding conversation?'), ('What does NASCAR stand for?')) 
+    For q_and_a=
+    [('Who has the most total touchdowns on the New England Patriots as of 2015?','rob gronkowski'),('Which country won the 2015 Womens FIFA World Cup?','united states'),('What is the name of the penalty in hockey when a player hits another player with the hockey stick?','high stick'),('What is Bostons NBA basketball team?','celtics'),('In basketball what is a basket from the court halfline worth?','3 points'),('Which MLB baseball team won the World Series in 2013?','red sox'),('What is three strikes in a row in bowling called?','hamstring'),('In track and field what is the event where someone jumps over obstacles while racing?','hurdles'),('What is the name of Americas largest skateboarding conversation?','x games'),('What does NASCAR stand for?','national association for stock car auto racig')]
 
 def display_results (answers, correct, incorrect): #Patrick
     """Display correct answers out of total answers"""
@@ -103,8 +106,13 @@ def main_loop (): #Jade
     """Using questions, randomize questions, ask players questions, display results"""
     display_title()
     display_directions() 
-    randomize_questions()
-    display_question(questions, answers)
+    questions_and_answers = randomize_questions()
+    results = []
+    for q_and_a in questions_and_answers:
+        question = q_and_a[0]
+        answer = q_and_a[1]
+        display_question(question, answer)
+        # Add to results ???
     display_results(answers)
     play_game(display_title, randomize_questions, display_questions, display_results)
 
