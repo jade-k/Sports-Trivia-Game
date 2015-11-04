@@ -100,14 +100,15 @@ def display_results (answers, correct, incorrect): #Patrick
     if (grade < 80):
        print('Good Job', name,' You Are A Sports Genius')
 
-
-def main_loop (questions):
+def main_loop (): #Jade
     """Using questions, randomize questions, ask players questions, display results"""
-    display_title (name)
-    display_directions = raw_input
-    randomize_questions = questions
-    display_question = (questions, answers)
-    display_results = answers
-    play_game = (display_title, randomize_questions, display_questions, display_results)
+    display_title(name)
+    display_directions() 
+    randomize_questions()
+    display_question(questions, answers)
+    display_results(answers)
+    play_game(display_title, randomize_questions, display_questions, display_results)
 
+name = item 
+main_loop()
 
