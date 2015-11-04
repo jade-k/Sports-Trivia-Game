@@ -87,8 +87,7 @@ def display_question (question, answer, correct): #Patrick
 
 def randomize_questions (): #Jade
     """Takes the questions,  puts them into  a random order"""
-    For (('Who has the most total touchdowns on the New England Patriots as of 2015?'),('Which country won the 2015 Womens FIFA World Cup?'),('What is the name of the penalty in hockey when a player hits another player with the hockey stick?'),('What is Bostons NBA basketball team?'),('In basketball what is a basket from the court halfline worth?'),('Which MLB baseball team won the World Series in 2013?'),('What is three strikes in a row in bowling called?'),('In track and field what is the event where someone jumps over obstacles while racing?'),('What is the name of Americas largest skaateboarding conversation?'), ('What does NASCAR stand for?')) 
-    item = random_choice
+    For questions = (('Who has the most total touchdowns on the New England Patriots as of 2015?'),('Which country won the 2015 Womens FIFA World Cup?'),('What is the name of the penalty in hockey when a player hits another player with the hockey stick?'),('What is Bostons NBA basketball team?'),('In basketball what is a basket from the court halfline worth?'),('Which MLB baseball team won the World Series in 2013?'),('What is three strikes in a row in bowling called?'),('In track and field what is the event where someone jumps over obstacles while racing?'),('What is the name of Americas largest skateboarding conversation?'), ('What does NASCAR stand for?')) 
 
 def display_results (answers, correct, incorrect): #Patrick
     """Display correct answers out of total answers"""
