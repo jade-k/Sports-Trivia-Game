@@ -102,13 +102,12 @@ def display_results (answers, correct, incorrect): #Patrick
 
 def main_loop (): #Jade
     """Using questions, randomize questions, ask players questions, display results"""
-    display_title(name)
+    display_title()
     display_directions() 
     randomize_questions()
     display_question(questions, answers)
     display_results(answers)
     play_game(display_title, randomize_questions, display_questions, display_results)
 
-name = item 
 main_loop()
 
