@@ -21,13 +21,13 @@ def display_question (question, answer, correct):
        
 def display_results (answers, correct):
     """Display correct answers out of total answers"""
-   # grade = (correct * 100)/ 10)
-   # print ('Your scored',grade, 'percent')
-   # if (grade > 70)
-      # print('Better luck next time',name)
+   grade = (correct * 100)/ 10)
+   print ('Your scored',grade, 'percent')
+    if (grade > 70)
+      print('Better luck next time',name)
 
-   # if (grade < 80)
-       # print('Good Job', name,' You Are A Sports Genius')
+   if (grade < 80)
+       print('Good Job', name,' You Are A Sports Genius')
 
 
 ### TESTS ###
@@ -89,7 +89,7 @@ def display_question (question, answer, correct): #Patrick
 
 def random_shuffle (q_and_a): #Jade
     """Takes the questions,  puts them into  a random order"""
-    For q_and_a=
+    For q_and_a =
     [('Who has the most total touchdowns on the New England Patriots as of 2015?','rob gronkowski'),('Which country won the 2015 Womens FIFA World Cup?','united states'),('What is the name of the penalty in hockey when a player hits another player with the hockey stick?','high stick'),('What is Bostons NBA basketball team?','celtics'),('In basketball what is a basket from the court halfline worth?','3 points'),('Which MLB baseball team won the World Series in 2013?','red sox'),('What is three strikes in a row in bowling called?','hamstring'),('In track and field what is the event where someone jumps over obstacles while racing?','hurdles'),('What is the name of Americas largest skateboarding conversation?','x games'),('What does NASCAR stand for?','national association for stock car auto racig')]
 
 def display_results (answers, correct, incorrect): #Patrick
