@@ -5,30 +5,7 @@ def display_title (name):
     name = raw_input('What is your name?')
     print('Welcome to the Ultimate Sports Trivia Game',name)
     
-def display_question (question, answer, correct):
-    """Display question. Get user answer. Return True if correct."""
-    # Write code here
-    # return True # FIXME
-    answer = raw_input(question)
-    # help from http://stackoverflow.com/questions/28491833/how-to-count-correct-answers-in-python
-    if answer == (answer):
-       print('correct!')
-       # help from http://stackoverflow.com/questions/28491833/how-to-count-correct-answers-in-python
-       correct = correct + 1
-    else:
-       print('incorrect')
-       incorrect = incorrect + 1
        
-def display_results (answers, correct):
-    """Display correct answers out of total answers"""
-   grade = (correct * 100)/ 10)
-   print ('Your scored',grade, 'percent')
-    if (grade > 70)
-      print('Better luck next time',name)
-
-   if (grade < 80)
-       print('Good Job', name,' You Are A Sports Genius')
-
 
 ### TESTS ###
 
@@ -74,18 +51,18 @@ def display_directions (): #Jade
         print('Ready to begin yet?')
 
 
-def display_question (question, answer, correct): #Patrick
+def display_question (q, a): #Patrick
     """Display question. Get user answer. Return True if correct."""
     # Write code here
     # return True # FIXME
     answer = raw_input(question)
-    if answer == (answer):
+    if answer == (a):
        print('correct!')
        # help from http://stackoverflow.com/questions/28491833/how-to-count-correct-answers-in-python
-       correct = correct + 1
+       return 1
     else:  
        print('incorrect')
-       incorrect = incorrect + 1
+       return 0
 
 def random_shuffle (q_and_a): #Jade
     """Takes the questions,  puts them into  a random order"""
@@ -94,7 +71,7 @@ def random_shuffle (q_and_a): #Jade
 
 def display_results (answers, correct, incorrect): #Patrick
     """Display correct answers out of total answers"""
-    grade = ("correct * 100)/ 10")
+    grade = (results * 10)
     print ('Your scored',grade, 'percent')
     if (grade > 70):
        print('Better luck next time',name)
@@ -107,12 +84,12 @@ def main_loop (): #Jade
     display_title()
     display_directions() 
     questions_and_answers = randomize_questions()
-    results = []
+    results = 0
     for q_and_a in questions_and_answers:
         question = q_and_a[0]
         answer = q_and_a[1]
-        display_question(question, answer)
-        # Add to results ???
+        results += display_question(question, answer)
+        
     display_results(answers)
     play_game(display_title, randomize_questions, display_questions, display_results)
 
