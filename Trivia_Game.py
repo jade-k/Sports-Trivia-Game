@@ -79,7 +79,7 @@ def display_question (question, answer, correct): #Patrick
     # Write code here
     # return True # FIXME
     answer = raw_input(question)
-    if answer == (answer):
+    if answer == (a):
        print('correct!')
        # help from http://stackoverflow.com/questions/28491833/how-to-count-correct-answers-in-python
        correct = correct + 1
@@ -88,9 +88,8 @@ def display_question (question, answer, correct): #Patrick
        incorrect = incorrect + 1
 
 def random_shuffle (q_and_a): #Jade
-    """Takes the questions,  puts them into  a random order"""
-    For q_and_a =
-    [('Who has the most total touchdowns on the New England Patriots as of 2015?','rob gronkowski'),('Which country won the 2015 Womens FIFA World Cup?','united states'),('What is the name of the penalty in hockey when a player hits another player with the hockey stick?','high stick'),('What is Bostons NBA basketball team?','celtics'),('In basketball what is a basket from the court halfline worth?','3 points'),('Which MLB baseball team won the World Series in 2013?','red sox'),('What is three strikes in a row in bowling called?','turkey'),('In track and field what is the event where someone jumps over obstacles while racing?','hurdles'),('What is the name of Americas largest skateboarding conversation?','x games'),('What does NASCAR stand for?','national association for stock car auto racig')]
+    """Shuffles the questions,  puts them into  a random order"""
+    q_and_a = [('Who has the most total touchdowns on the New England Patriots as of 2015?','rob gronkowski'),('Which country won the 2015 Womens FIFA World Cup?','united states'),('What is the name of the penalty in hockey when a player hits another player with the hockey stick?','high stick'),('What is Bostons NBA basketball team?','celtics'),('In basketball what is a basket from the court halfline worth?','3 points'),('Which MLB baseball team won the World Series in 2013?','red sox'),('What is three strikes in a row in bowling called?','turkey'),('In track and field what is the event where someone jumps over obstacles while racing?','hurdles'),('What is the name of Americas largest skateboarding conversation?','x games'),('What does NASCAR stand for?','national association for stock car auto racig')]
 
 q_and_a = questions_and_answers
 
@@ -107,8 +106,9 @@ def display_results (answers, correct, incorrect): #Patrick
 def main_loop (): #Jade
     """Using questions, randomize questions, ask players questions, display results"""
     display_title()
-    display_directions() 
-    questions_and_answers = randomize_questions()
+    display_directions()
+    q_and_a = [('Who has the most total touchdowns on the New England Patriots as of 2015?','rob gronkowski'),('Which country won the 2015 Womens FIFA World Cup?','united states'),('What is the name of the penalty in hockey when a player hits another player with the hockey stick?','high stick'),('What is Bostons NBA basketball team?','celtics'),('In basketball what is a basket from the court halfline worth?','3 points'),('Which MLB baseball team won the World Series in 2013?','red sox'),('What is three strikes in a row in bowling called?','turkey'),('In track and field what is the event where someone jumps over obstacles while racing?','hurdles'),('What is the name of Americas largest skateboarding conversation?','x games'),('What does NASCAR stand for?','national association for stock car auto racig')
+    random_shuffle(q_and_a)
     results = []
     for q_and_a in questions_and_answers:
         question = q_and_a[0]
@@ -119,4 +119,7 @@ def main_loop (): #Jade
     play_game(display_title, randomize_questions, display_questions, display_results)
 
 main_loop()
+
+questions = q
+answers = a
 
