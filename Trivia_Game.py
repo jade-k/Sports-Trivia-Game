@@ -107,7 +107,7 @@ def main_loop (): #Jade
     """Using questions, randomize questions, ask players questions, display results"""
     display_title()
     display_directions()
-    q_and_a = [('Who has the most total touchdowns on the New England Patriots as of 2015?','rob gronkowski'),('Which country won the 2015 Womens FIFA World Cup?','united states'),('What is the name of the penalty in hockey when a player hits another player with the hockey stick?','high stick'),('What is Bostons NBA basketball team?','celtics'),('In basketball what is a basket from the court halfline worth?','3 points'),('Which MLB baseball team won the World Series in 2013?','red sox'),('What is three strikes in a row in bowling called?','turkey'),('In track and field what is the event where someone jumps over obstacles while racing?','hurdles'),('What is the name of Americas largest skateboarding conversation?','x games'),('What does NASCAR stand for?','national association for stock car auto racig')
+    q_and_a = [('Who has the most total touchdowns on the New England Patriots as of 2015?','rob gronkowski'),('Which country won the 2015 Womens FIFA World Cup?','united states'),('What is the name of the penalty in hockey when a player hits another player with the hockey stick?','high stick'),('What is Bostons NBA basketball team?','celtics'),('In basketball what is a basket from the court halfline worth?','3 points'),('Which MLB baseball team won the World Series in 2013?','red sox'),('What is three strikes in a row in bowling called?','turkey'),('In track and field what is the event where someone jumps over obstacles while racing?','hurdles'),('What is the name of Americas largest skateboarding conversation?','x games'),('What does NASCAR stand for?','national association for stock car auto racig')]
     random_shuffle(q_and_a)
     results = []
     for q_and_a in questions_and_answers:
@@ -120,6 +120,7 @@ def main_loop (): #Jade
 
 main_loop()
 
+questions_and_answers = q_and_a
 questions = q
 answers = a
 
